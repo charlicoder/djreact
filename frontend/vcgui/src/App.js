@@ -11,8 +11,6 @@ function App() {
       <div className="App">
         <Router>
           <CustomLayout>
-            <h2>Hello World!</h2>
-            <hr/>
             <BaseRouter />
           </CustomLayout>
         </Router>
