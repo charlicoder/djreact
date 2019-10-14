@@ -27,6 +27,10 @@ class CustomForm extends React.Component {
                     .then(res => console.log(res))
                     .catch(err => console.error(err))
                 // console.log(`http://localhost:8000/api/${articleID}/`, articleData)
+            default:
+                return axios.get(`http://localhost:8000/api/${articleID}/`)
+                    .then(res => console.log(res))
+                    .catch(err => console.error(err))
         }
         
     }

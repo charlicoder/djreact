@@ -11,16 +11,16 @@ const CustomLayout = (props) => {
                 <div className="logo" />
                 <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{ lineHeight: '64px' }}>
                     <Menu.Item key="1"><Link to='/'>Home</Link></Menu.Item>
-                    <Menu.Item key="2"><Link to='/'>Articles</Link></Menu.Item>
-                    <Menu.Item key="3"><Link to='/login/'>Login</Link></Menu.Item>
+                    <Menu.Item key="2"><Link to='/articles'>Articles</Link></Menu.Item>
+                    <Menu.Item key="3"><Link to='/login'>Login</Link></Menu.Item>
                 </Menu>
             </Header>
             <Content style={{ padding: '0 50px' }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
                     <Breadcrumb.Item><Link to='/'>Home</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to='/'>List</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to='/articles'>Article List</Link></Breadcrumb.Item>
                 </Breadcrumb>
-                <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+                <div style={{ padding: 16, minHeight: '95vh' }}>
                     { props.children }
                 </div>
             </Content>
